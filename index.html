@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Upload</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <div class="hero">
-        <div class="card">
-            <h1>Upload your image</h1>
+      <div class="card">
+        <h1>Upload your image</h1>
+        <div class="imagearea">
+          <img src="" id="profile-pic" />
+        </div>
+        <label for="input-file">Upload Image</label>
+        <input
+          type="file"
+          accept="image/jpeg, image/png, image/jpg"
+          id="input-file"
+        />
 
-              <img src="./Day 4.png" id="profile-pic">
-               
-              <label for="input-file">Update Image</label>
-              <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
-
-
-             </div>
+        <button id="btn">Remove Image</button>
+      </div>
     </div>
 
-
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
